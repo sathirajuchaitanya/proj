@@ -24,7 +24,6 @@ export class AppComponent {
       }
      
     });
-    console.log(this.users)
     }
 
   routeToPayment(){

@@ -55,8 +55,7 @@ export class PaymentComponent implements OnInit {
     }
     this.store.dispatch(addCustomer(this.userDetails));
     const response = await this.paymentService.addUser(this.userDetails);
-    this.toasterMsg = response
-    console.log(this.toasterMsg.message);
+    this.toasterMsg = response;
     this.toastService.success(this.toasterMsg.message);
     this.router.navigate(['../'],{relativeTo:this.route});
     this.loading = true;
